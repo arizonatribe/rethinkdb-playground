@@ -1,0 +1,11 @@
+rethinkdb-playground:
+  image: rethinkdb-playground
+  container_name: rethinkdb-playground
+  ports:
+    - 29015:29015
+    - 28015:28015
+    - 8080:8080
+  volumes:
+    - ./:/data/rethinkdb-playground
+    - ./log:/var/log
+    - /data/rethinkdb-playground/node_modules
